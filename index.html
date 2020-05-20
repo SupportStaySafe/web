@@ -24,10 +24,7 @@
             <div class="container">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+                    <div class="ico-menu"></div>
                 </button>
                 <a class="navbar-brand-logo" href="#landingPage"><div class="logo-staysafe"></div></a>
               </div>
@@ -43,7 +40,10 @@
             </div>
           </nav>
     </div>
-    <div class="footer-container">
+    <div class="whatsapp-wrap">
+        <a href="#"><div class="ico-whatsapp"></div></a>
+    </div>
+    <div class="footer-container switch-large-screen">
         <p>©2020 StaySafe App. All Right Reserved.</p>
     </div>
     <div id="fullpage">
@@ -192,7 +192,7 @@
                                     <input type="email" class="form-control" placeholder="Alamat Email Anda">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 no-padding-small">
                                 <div class="form-group">
                                     <label>Subjek Email</label>
                                     <select class="form-control">
@@ -208,7 +208,7 @@
                                 <button type="submit" class="btn btn-green btn-block">Kirim</button>
                             </div>
                         </form>
-
+                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
@@ -217,11 +217,17 @@
                     <center><div class="logo-staysafe"></div></center>
                 </div>
                 <div class="col-md-3 no-padding">
-                    <div class="item-info">
-                        <div class="ico-location"></div>
-                        <p>
-                            Wisma Staco Lantai 5 Unit B <br> Jl. Casablanca Kav. 18, Jakarta 12870
-                        </p>
+                    <div class="item-info contact-list">
+                        
+                        <ul>
+                            <li>
+                                <div class="ico-location"></div>
+                                <p>
+                                    Wisma Staco Lantai 5 Unit B <br> Jl. Casablanca Kav. 18, Jakarta 12870
+                                </p>
+                            </li>
+                        </ul>
+                       
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -252,6 +258,9 @@
                         </ul>
                 </div>
             </div>
+            <div class="footer-container switch-small-screen">
+                <p>©2020 StaySafe App. All Right Reserved.</p>
+            </div>
         </div>
     </div>
 
@@ -262,22 +271,23 @@
 
 
 
-    <script src="assets/lib/jquery-1.12.4.min.js"  crossorigin="anonymous"></script>
+    <script src="assets/lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
     <script src="assets/lib/fullpage/fullpage.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/custom.js"></script> -->
         <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['landingPage', 'aboutPage','solusiPage', 'fiturPage' , 'contactPage'],
-        sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
-        navigation: true,
-        navigationPosition: 'right',
-        // navigationTooltips: ['First page', 'Second page', 'Third and last page'],
-        responsiveWidth: 1100,
-        afterResponsive: function(isResponsive){
+            var myFullpage = new fullpage('#fullpage', {
+                anchors: ['landingPage', 'aboutPage','solusiPage', 'fiturPage' , 'contactPage'],
+                sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
+                navigation: true,
+                navigationPosition: 'right',
+                // navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+                responsiveWidth: 1100,
+                afterResponsive: function(isResponsive){
 
-        }
+                }
 
-    });
-</script>
+            });
+        </script>
   </body>
 </html>

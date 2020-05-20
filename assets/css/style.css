@@ -95,6 +95,7 @@ p{
 	background-image:url(../img/logo-staysafe.svg);
 	background-size: contain;
 	background-position:center;
+	background-repeat: no-repeat;
 }
 .nav>li>a.btn {
 	padding: 10px 15px;
@@ -290,7 +291,7 @@ p{
 	  background-size: contain;
 	  background-position: center;
 	  background-repeat: no-repeat;
-	  float:left 
+	  float:left;
 	  }
 	  .ico-call{
 		width:17px;
@@ -353,6 +354,17 @@ p{
 		background-repeat: no-repeat;
 		margin: 10px 7px;
 	}
+
+	.ico-menu {
+		width:40px;
+		height:40px;
+		background-image: url(../img/ico-menu.svg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin: auto;
+	}
+
 	.sosial-network, .contact-list{
 		text-align: center;
 	}
@@ -398,3 +410,175 @@ p{
 		margin:30px auto 20px auto;
 		color:#A0A0A0
 	}
+	.navbar-collapse{ 
+		background-color: rgba(255, 255, 255, 0.178);
+	}
+	.navbar-nav {
+		float:right;
+		text-align:center;
+	}
+	.whatsapp-wrap {
+		position:fixed;
+		right:15px;
+		bottom:15px;
+		height:60px;
+		width:60px;
+		z-index:99999;
+	}
+	.ico-whatsapp{
+		width:60px;
+		height:60px;
+		background-image: url(../img/ico-whatsapp.png);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		float:left 
+		}
+	@media screen and (max-width:1024px){
+		.nav>li>a {
+			font-size: 14px;
+			padding: 8px 10px;
+			margin:auto
+		}
+		.logo-staysafe {
+			width: 70px;
+			height: 40px;
+			background-repeat: no-repeat;
+		}
+		.navbar-nav {
+			padding: 0px 0px;
+		}
+		#navbar {
+			padding: 11px 0px 0px 0px;
+		}
+
+	}
+@media screen and (max-width:1100px) {
+	.nav>li>a {
+		margin: auto 10px;
+	}
+	.landing-page h1 {
+		font-size: 51px;
+		line-height: 71px;
+	}
+	.landing-page p {
+		font-size: 18px;
+	}
+	.bg-solusi {
+		height: 500px;
+		top: 21%;
+	}
+	.info-bottom {
+		margin: 30px auto 20px auto;
+	}
+}
+@media screen and (max-width:767px) {
+	.navbar-nav {
+		float:none;
+		text-align:center;
+    	padding: 0px 50px;
+	}
+	.nav>li>a {
+		font-size: 16px;
+		padding: 11px 10px;
+		margin: auto;
+	}
+	.about-page, .solusi-page{
+		text-align: left;
+    	padding: 0px;
+	}
+	.nav>li {
+		margin: 15px auto;
+	}
+	.no-padding-small {
+		padding:0px
+	}
+	
+}
+@media screen and (min-width:769px)  {
+	.switch-large-screen{
+		display:block;
+	}
+	.switch-small-screen{
+		display:none;
+	}
+}
+@media screen and (max-width:768px) {
+	.logo-staysafe {
+		width: 80px;
+		height: 40px;
+	}
+	.landing-page h1 {
+		font-size: 40px;
+		line-height: 55px;
+	}
+	.bg-landing {
+		position:relative;
+		margin-top:100px
+	}
+	.landing-page {
+		text-align:center;
+	}
+	.bg-about {
+		background-position: center;
+		position: relative;
+		margin:100px auto;
+		height: 450px;
+	}
+	.switch-large-screen{
+		display:none;
+	}
+	.switch-small-screen{
+		display:block;
+	}
+	.bg-solusi {
+		position: relative;
+		margin-top:100px;
+		background-position: center;
+		height: 450px;
+	}
+	.navbar-inverse-white {
+		padding: 0px 0px 0px 0px;
+	}
+	.footer-container{
+		position: relative;
+	}
+	.footer-container p {
+		margin:auto;
+		padding: 40px;
+	}
+
+}
+
+@media screen and (max-width:425px) {
+	.bg-landing {
+		position: relative;
+		height: 270px;
+		margin: 50px auto 50px;
+	}
+	.bg-about{
+		position: relative;
+		height: 270px;
+		margin: 100px auto 50px;
+	}
+	.landing-page h1 {
+		font-size: 30px;
+		line-height: 43px;
+	}
+	.landing-page p, .about-page p, .solusi-page p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.landing-page a img {
+		margin: 10px 10px;
+	}
+}
+
+.clearfix {
+	clear: both;
+}
+
+nav {
+	text-align: center;
+	position: fixed !important;}
+
