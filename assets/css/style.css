@@ -125,9 +125,9 @@ p{
 	text-align:left;
 }
 .landing-page h1 {
-		font-size: 65px;
-		font-weight:500;
-		line-height:80px;
+    font-size: 57px;
+    font-weight: 500;
+    line-height: 76px;
 }
 .landing-page p {
 	margin:20px auto;
@@ -143,14 +143,31 @@ p{
     width: 100%;
     height: 450px;
     position: absolute;
-
 }
 .landing-page a img {
 	width:150px;
 	margin:auto 20px auto 0px
 }
 
+#en_click {
+    background-image: url(../img/ico-en.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    width:30px;
+	height: 40px;
+	display: inline-block;
+}
 
+#id_click {
+    background-image: url(../img/ico-id.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    width:30px;
+	height: 40px;
+	display: inline-block;
+}
 .bg-about {
 	background-image: url(../img/img-about-page.png);
     background-size: contain;
@@ -582,3 +599,40 @@ nav {
 	text-align: center;
 	position: fixed !important;}
 
+	#en {
+		display: none;
+	  }
+	  
+	  .button_lang {
+		filter: grayscale(100%);
+		opacity:0.3;
+		-webkit-transition: background-color .3s ease-in-out;
+		-moz-transition: background-color .3s ease-in-out;
+		-o-transition: background-color .3s ease-in-out;
+		-ms-transition: background-color .3s ease-in-out;
+		transition: background-color .3s ease-in-out;
+	  }
+	  .button_lang:hover, .current_lang {
+		opacity:1;
+		filter: grayscale(0%);
+		-webkit-transition: background-color .3s ease-in-out;
+		-moz-transition: background-color .3s ease-in-out;
+		-o-transition: background-color .3s ease-in-out;
+		-ms-transition: background-color .3s ease-in-out;
+		transition: background-color .3s ease-in-out;
+	  }
+	  ul li {
+		width: auto;
+		display: inline;
+	  }
+	  #id_click, #en_click {
+		  cursor: pointer;
+		  color:transparent !important;
+	  }
+	  .flag-wrapper {
+		float: left;
+		margin: 23px 0px 0px 40px;
+	  }
+	  .flag-wrapper li {
+		  margin-right:8px
+	  }

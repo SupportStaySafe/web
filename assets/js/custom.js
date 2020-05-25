@@ -1,34 +1,42 @@
-(function(){
-    var $g_examples = document.querySelector('#examplesList');
+var indonesia = document.getElementById('id_click'),
+    english = document.getElementById('en_click'),
+    id_txt = document.querySelectorAll('#id'),
+    en_txt = document.querySelectorAll('#en'),
+    nb_id = id_txt.length,
+    nb_en = en_txt.length;
 
-    function init(){
-        bindEvents();
+    indonesia.addEventListener('click', function() {
+    langue(indonesia,english);
+}, false);
+
+english.addEventListener('click', function() {
+    langue(english,indonesia);
+}, false);
+function langue(langueOn,langueOff){
+    if (!langueOn.classList.contains('current_lang')) {
+        langueOn.classList.toggle('current_lang');
+        langueOff.classList.toggle('current_lang');
     }
-
-    function bindEvents(){
-        document.querySelector('#showExamples').addEventListener('click', showExamples);
-        document.querySelector('html').addEventListener('click', hideExamples);
+    if(langueOn.innerHTML == 'id'){
+        afficher(id_txt, nb_id);
+        cacher(en_txt, nb_en);
     }
-
-    function showExamples(event){
-        event = event || window.event;
-
-        event.stopPropagation();
-        event.preventDefault();
-
-
-        if(!$g_examples.isVisible){
-            $g_examples.style.display = 'block';
-            $g_examples.isVisible = true;
-        }else{
-            $g_examples.style.display = 'none';
-            $g_examples.isVisible = false;
-        }
+    else if(langueOn.innerHTML == 'en'){
+        afficher(en_txt, nb_en);
+        cacher(id_txt, nb_id);
     }
-
-    function hideExamples(){
-         $g_examples.style.display = 'none';
+}
+function afficher(txt,nb){
+    for(var i=0; i < nb; i++){
+        txt[i].style.display = 'block';
     }
-
-    init();
-})();
+}
+function cacher(txt,nb){
+    for(var i=0; i < nb; i++){
+        txt[i].style.display = 'none';
+    }
+}
+function init(){
+    langue(indonesia,english);
+}
+init();
