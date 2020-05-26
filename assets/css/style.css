@@ -526,6 +526,18 @@ p{
 	
 }
 @media screen and (min-width:769px)  {
+	.container-radar {
+		position: absolute;
+		width: 500px;
+		height: 230px;
+		margin: auto;
+		left: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		top: 0;
+		opacity: 0.5;
+	  }
 	.switch-large-screen{
 		display:block;
 	}
@@ -538,6 +550,21 @@ p{
 	.flag-wrapper {
 		margin: 22px 0px 0px 40px;
 	  }
+	  .logo-staysafe-preloader {
+		width: 80px;
+		height: 52px;
+		background-image: url(../img/logo-staysafe.svg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 24px;
+		top: -25px;
+		bottom: 0;
+	}
+
 }
 @media screen and (max-width:768px) {
 	.logo-staysafe {
@@ -550,7 +577,8 @@ p{
 	}
 	.bg-landing {
 		position:relative;
-		margin-top:100px
+		margin-top:100px;
+		right: 0;
 	}
 	.landing-page {
 		text-align:center;
@@ -586,7 +614,32 @@ p{
 	.flag-wrapper {
 		margin: 16px 0px 0px 40px;
 	  }
-
+	  .container-radar {
+		position: absolute;
+		width: 500px;
+		height: 230px;
+		margin: auto;
+		left: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		top: 0;
+		opacity: 0.5;
+	  }
+	  .logo-staysafe-preloader {
+		width: 85px;
+		height: 52px;
+		background-image: url(../img/logo-staysafe.svg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 15px;
+		top: -21px;
+		bottom: 0;
+	}
 }
 
 @media screen and (max-width:425px) {
@@ -697,12 +750,7 @@ nav {
   .st7{fill:url(#white2_2_);}
   .st8{fill:url(#SVGID_5_);}
   .st9{fill:url(#SVGID_6_);}
-  .container-radar {
-	  position:relative;
-	  width:1100px;
-	  height:500px;
-	  margin:20px auto;
-  }
+
   .radar {
 	  position:absolute;
 	  left:0;
@@ -729,20 +777,58 @@ nav {
 		width: 300px;
 		height: 130px;
 	}
+	.logo-staysafe-preloader {
+		width: 54px;
+		height: 52px;
+		background-image: url(../img/logo-staysafe.svg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 11px;
+		top: -90px;
+		bottom: 0;
+	}
 }
 @media screen and (max-width:480px) {
 	.radar svg, .masking-radar svg{
-		width:400px;
-		margin:auto;
-		text-align:center
+		width: 330px !important;
+		margin: auto;
+		text-align: center;
+		position: absolute;
 	}
 
 	.filter {
 	filter: drop-shadow( 0px 0px 1px rgba(236,28,36,0.9));
 	}
 	.container-radar {
+		position: absolute;
 		width: 300px;
-		height: 130px;
+		height: 150px;
+		/* background: red; */
+		margin: auto;
+		left: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		top: 0;
+		opacity: 0.5;
+	}
+	.logo-staysafe-preloader {
+		width: 54px;
+		height: 52px;
+		background-image: url(../img/logo-staysafe.svg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: -15px;
+		top: -10px;
+		bottom: 0;
 	}
 }		
 @media screen and (min-width:481px) and (max-width:500px) {
@@ -757,39 +843,9 @@ nav {
 }
 @media screen and (min-width:501px) and (max-width:800px) {
 	.radar svg, .masking-radar svg{
-		width:700px;
+		width:500px;
 		margin:auto;
 		text-align:center
 	}
 
-}
-
-
-  .container-radar {
-    position: absolute;
-    width: 500px;
-    height: 230px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-	top: 0;
-	opacity: 0.5;
-  }
-
-
-.logo-staysafe-preloader {
-	width: 80px;
-    height: 52px;
-    background-image: url(../img/logo-staysafe.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 24px;
-    top: -25px;
-    bottom: 0;
 }
