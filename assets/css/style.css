@@ -871,4 +871,21 @@ nav {
 	.bg-about {
 		height: 450px;
 	}
+	.img-contact img {
+		width: 70%;
+		margin-top: 60px;
+	}
+	.logo-staysafe {
+		width: 88px;
+		height: 52px;
+	}
+	.item-info {
+		margin:auto;
+	}
+	.footer-container {
+		height: 50px;
+	}
+	.footer-container p {
+		margin: 18px auto 20px auto;
+	}
 }
