@@ -850,7 +850,7 @@ nav {
 
 }
 
-@media screen and (width:1280px) and (height:655px) {
+@media screen and (width:1280px) and (max-height:800px) {
 	.item img {
 		width: 70px;
 		height: 70px;
