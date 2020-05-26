@@ -149,8 +149,9 @@ p{
     background-position: right;
     background-repeat: no-repeat;
     width: 100%;
-    height: 450px;
+    height: 400px;
     position: absolute;
+    right: 40px;
 }
 .landing-page a img {
 	width:150px;
@@ -656,3 +657,139 @@ nav {
 	  .flag-wrapper li {
 		  margin-right:8px
 	  }
+
+/* Center the loader */
+#loader {
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom:0;
+	right:0;
+	z-index: 9999999;
+	background:#fff;
+}
+  
+  #myDiv {
+	display: none;
+	text-align: center;
+  }
+
+
+  .path {
+	animation: draw 2.5s infinite;
+  }
+
+  @keyframes draw {
+	50% {
+	  stroke-dashoffset: 0;
+	}
+  } 
+  .filter {
+	   filter: drop-shadow( 0px 0px 3px rgba(236,28,36,0.9));
+  }
+  .st0{fill:none;stroke:#EC1C24;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  .st1{fill:none;stroke:#EC1C24;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  .st2{fill:url(#SVGID_1_);}
+  .st3{fill:url(#SVGID_2_);}
+  .st4{fill:url(#white3_1_);}
+  .st5{fill:url(#SVGID_3_);}
+  .st6{fill:url(#SVGID_4_);}
+  .st7{fill:url(#white2_2_);}
+  .st8{fill:url(#SVGID_5_);}
+  .st9{fill:url(#SVGID_6_);}
+  .container-radar {
+	  position:relative;
+	  width:1100px;
+	  height:500px;
+	  margin:20px auto;
+  }
+  .radar {
+	  position:absolute;
+	  left:0;
+	  right:0;
+	  top:0;
+	  bottom:0;
+  }
+  .masking-radar {
+	  position: relative;
+	  z-index: 1;
+  }
+
+  .logo {
+	  margin:auto;
+	  text-align:center;
+  }
+
+/** Small Device Styles **/
+@media screen and (max-width:360px) {
+	.radar svg, .masking-radar svg{
+		width:380px !important;
+	}
+	.container-radar {
+		width: 300px;
+		height: 130px;
+	}
+}
+@media screen and (max-width:480px) {
+	.radar svg, .masking-radar svg{
+		width:400px;
+		margin:auto;
+		text-align:center
+	}
+
+	.filter {
+	filter: drop-shadow( 0px 0px 1px rgba(236,28,36,0.9));
+	}
+	.container-radar {
+		width: 300px;
+		height: 130px;
+	}
+}		
+@media screen and (min-width:481px) and (max-width:500px) {
+	.radar svg, .masking-radar svg{
+		width:500px;
+		margin:auto;
+		text-align:center
+	}
+	.filter {
+	filter: drop-shadow( 0px 0px 1px rgba(236,28,36,0.9));
+	}
+}
+@media screen and (min-width:501px) and (max-width:800px) {
+	.radar svg, .masking-radar svg{
+		width:700px;
+		margin:auto;
+		text-align:center
+	}
+
+}
+
+
+  .container-radar {
+    position: absolute;
+    width: 500px;
+    height: 230px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+	top: 0;
+	opacity: 0.5;
+  }
+
+
+.logo-staysafe-preloader {
+	width: 80px;
+    height: 52px;
+    background-image: url(../img/logo-staysafe.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 24px;
+    top: -25px;
+    bottom: 0;
+}
