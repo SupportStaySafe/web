@@ -40,3 +40,6 @@ function init(){
     langue(indonesia,english);
 }
 init();
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
