@@ -74,7 +74,7 @@ p{
 }
 .navbar-inverse-white {
 	background-color: rgba(255, 255, 255, 1);
-	padding: 15px 0px 5px 0px;
+	padding:0px;
 }
 .navbar-brand-logo {
     float: left;
@@ -248,7 +248,7 @@ p{
 	text-align: center;
 }
 .img-contact img {
-	width:100%
+	width:94%
 }
 .contact-page {
 	text-align:left;
@@ -304,7 +304,7 @@ p{
 	height: 212px;
   }
   .info-bottom {
-	  margin:100px auto 20px auto;
+	  margin:10px auto 10px auto;
 	  padding:0px 20px;
   }
 
