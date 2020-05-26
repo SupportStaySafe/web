@@ -75,14 +75,14 @@ p{
 .navbar-inverse-white {
 	background-color: rgba(255, 255, 255, 1);
 	padding:0px;
-	margin-bottom: 0px;
+	margin-bottom: 0px !important;
 }
 .navbar-brand-logo {
     float: left;
     /* height: 50px; */
-    padding: 15px 15px;
     font-size: 18px;
-    line-height: 20px;
+	line-height: 20px;
+	padding: 15px 15px 0px 15px;
 }
 #navbar {
 	padding: 16px 0px;
